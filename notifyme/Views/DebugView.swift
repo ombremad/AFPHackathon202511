@@ -44,17 +44,24 @@ struct DebugView: View {
                 Text("debug.header.scheduledNotifications")
             }
             Section {
-                Button("debug.deleteAllSystemScheduledNotifications") {
+                Button("debug.makeDemoNotification", systemImage: "app.badge") {
+                    let _ =  NotificationManager.shared.scheduleNotification(
+                        title: String(localized: "notification.reminder.title \(String("Dembo"))"),
+                        body: String(localized: "notification.reminder.body"),
+                        timeInterval: 15
+                    )
+                }
+                Button("debug.deleteAllData", systemImage: "trash") {
+                    try? modelContext.delete(model: Contact.self)
+                    try? modelContext.delete(model: Notification.self)
                     NotificationManager.shared.deleteAllNotifications()
                     loadNotifications()
-                }
-                Button("debug.deleteAllContacts") {
-                    try? modelContext.delete(model: Contact.self)
                 }
             } header: {
                 Text("debug.header.actions")
             }
         }
+        .navigationTitle("debug.title")
         .task {
             loadNotifications()
         }

@@ -89,7 +89,7 @@
               "one" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Every %lld day"
+                  "value" : "Every day"
                 }
               },
               "other" : {
@@ -123,22 +123,12 @@
         }
       }
     },
-    "debug.deleteAllContacts" : {
+    "debug.deleteAllData" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Delete all contacts"
-          }
-        }
-      }
-    },
-    "debug.deleteAllSystemScheduledNotifications" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete all scheduled notifications"
+            "value" : "Delete all data"
           }
         }
       }
@@ -173,12 +163,32 @@
         }
       }
     },
+    "debug.makeDemoNotification" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make demo notification"
+          }
+        }
+      }
+    },
     "debug.noScheduledNotification" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "No scheduled notification"
+          }
+        }
+      }
+    },
+    "debug.title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debug menu"
           }
         }
       }
@@ -221,7 +231,7 @@
               "one" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Every %lld day"
+                  "value" : "Every day"
                 }
               },
               "other" : {
@@ -241,6 +251,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "New contact"
+          }
+        }
+      }
+    },
+    "notification.reminder.body" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Now’s the time to get back in touch."
+          }
+        }
+      }
+    },
+    "notification.reminder.title %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Say hi to %@!"
           }
         }
       }

@@ -76,11 +76,15 @@ struct ContactsView: View {
                 }
                 if permissionGranted == false {
                     Section {
-                        HStack(alignment: .top) {
+                        HStack(alignment: .top, spacing: 12) {
                             Image(systemName: "exclamationmark.circle")
-                                .font(.title)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(maxWidth: 38)
                                 .foregroundStyle(.black)
                             VStack(alignment: .leading) {
+                                Text("contacts.authorizationWarning.title")
+                                    .font(.headline)
                                 Text("contacts.authorizationWarning.content")
                                     .font(.subheadline)
                                     .foregroundStyle(.black)
@@ -90,8 +94,6 @@ struct ContactsView: View {
                                 .buttonStyle(.borderedProminent)
                             }
                         }
-                    } header: {
-                        Text("contacts.authorizationWarning.title")
                     }
                     .listRowBackground(Color.yellow)
                 }
@@ -99,7 +101,6 @@ struct ContactsView: View {
             .navigationTitle("contacts.title")
             .toolbar {
                 ToolbarItem(placement: .secondaryAction) {
-                    //DEBUG BUTTON!
                     NavigationLink {
                         DebugView()
                     } label: {
@@ -122,10 +123,9 @@ struct ContactsView: View {
         }
     }
     
-    func deleteContact(_ contact: Contact) {
+    private func deleteContact(_ contact: Contact) {
         for notification in contact.notifications {
             if let notificationID = notification.notificationID {
-                print("Deleting notification with ID: \(notificationID)")
                 NotificationManager.shared.deleteNotification(identifier: notificationID)
             }
             modelContext.delete(notification)
