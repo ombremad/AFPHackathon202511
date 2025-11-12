@@ -22,33 +22,27 @@ struct ContactsView: View {
                             .font(.headline)
                         
                         HStack {
-                            Text("Every \(contact.daysBetweenNotifications) days")
+                            Text("contacts.everyXDays \(contact.daysBetweenNotifications)")
                                 .font(.caption)
                                 .foregroundStyle(.secondary)
-                            
-                            if let nextNotif = contact.nextNotification {
-                                Text("• Next: \(nextNotif.formatted(date: .abbreviated, time: .omitted))")
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
-                            }
                         }
                     }
                     .swipeActions {
                         Button(role: .destructive) {
                             modelContext.delete(contact)
                         } label: {
-                            Label("Delete", systemImage: "trash")
+                            Label("button.delete", systemImage: "trash")
                         }
                     }
                 }
             }
-            .navigationTitle("Contacts")
+            .navigationTitle("contacts.title")
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
                     NavigationLink {
                         NewContactView()
                     } label: {
-                        Label("Add Contact", systemImage: "person.crop.circle.fill.badge.plus")
+                        Label("button.addContact", systemImage: "person.crop.circle.fill.badge.plus")
                     }
                 }
             }

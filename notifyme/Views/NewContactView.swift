@@ -24,27 +24,24 @@ struct NewContactView: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section("Contact Information") {
-                    TextField("Name", text: $name)
+                Section("newContact.header.contactInformation") {
+                    TextField("newContact.inputField.name", text: $name)
                 }
-                
-                Section("Notification Settings") {
-                    Stepper("Every \(daysBetweenNotifications) days", value: $daysBetweenNotifications, in: 1...365)
-                    
-                    DatePicker("Next notification", selection: $nextNotification, displayedComponents: [.date])
+                Section("newContact.header.notificationSetting") {
+                    Stepper("newContact.stepper.everyXDays \(daysBetweenNotifications)", value: $daysBetweenNotifications, in: 1...60)
                 }
             }
-            .navigationTitle("New Contact")
+            .navigationTitle("newContact.title")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") {
+                    Button("button.cancel") {
                         dismiss()
                     }
                 }
                 
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("Save") {
+                    Button("button.save") {
                         let trimmedName = name.trimmingCharacters(in: .whitespaces)
                         let newContact = Contact(
                             name: trimmedName,
