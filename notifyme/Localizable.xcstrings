@@ -101,6 +101,12 @@
         }
       }
     },
+    "DEBUG" : {
+
+    },
+    "ID: %@" : {
+
+    },
     "newContact.header.contactInformation" : {
       "localizations" : {
         "en" : {
@@ -150,6 +156,9 @@
           }
         }
       }
+    },
+    "No scheduled notifications" : {
+
     }
   },
   "version" : "1.1"

@@ -73,4 +73,13 @@ class NotificationManager {
     func cancelAllNotifications() {
         UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
     }
+    
+    // Get all pending notifications
+    func getPendingNotifications(completion: @escaping ([UNNotificationRequest]) -> Void) {
+        UNUserNotificationCenter.current().getPendingNotificationRequests { requests in
+            DispatchQueue.main.async {
+                completion(requests)
+            }
+        }
+    }
 }

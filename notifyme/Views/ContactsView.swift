@@ -56,10 +56,12 @@ struct ContactsView: View {
                             Text(contact.name)
                                 .font(.headline)
                             Text("contacts.everyXDays \(contact.daysBetweenNotifications)")
-                                .font(.caption)
+                                .font(.subheadline)
+                                .foregroundStyle(.secondary)
                             if let nextNotification = contact.nextUpcomingNotification {
                                 Text("contacts.nextNotificationScheduledOn \(nextNotification.dateFormatted)")
-                                    .font(.caption2)
+                                    .font(.caption)
+                                    .foregroundStyle(.accent)
                             }
                         }
                         .swipeActions {
@@ -93,6 +95,14 @@ struct ContactsView: View {
             }
             .navigationTitle("contacts.title")
             .toolbar {
+                ToolbarItem(placement: .secondaryAction) {
+                    //DEBUG BUTTON!
+                    NavigationLink {
+                        DebugView()
+                    } label: {
+                        Label("DEBUG", systemImage: "ant")
+                    }
+                }
                 ToolbarItem(placement: .primaryAction) {
                     NavigationLink {
                         NewContactView()
