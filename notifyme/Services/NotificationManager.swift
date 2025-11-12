@@ -6,7 +6,7 @@
 //
 
 
-import Foundation
+import SwiftUI
 import UserNotifications
 
 class NotificationManager {
@@ -24,6 +24,13 @@ class NotificationManager {
             DispatchQueue.main.async {
                 completion(granted)
             }
+        }
+    }
+    
+    // Request permission again through settings if first time was dismissed
+    func openSettings() {
+        if let url = URL(string: UIApplication.openSettingsURLString) {
+            UIApplication.shared.open(url)
         }
     }
     

@@ -18,30 +18,42 @@ struct ContactsView: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(contacts) { contact in
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(contact.name)
-                            .font(.headline)
-                        HStack {
+                if contacts.isEmpty {
+                    Text("contacts.contactListIsEmpty")
+                } else {
+                    ForEach(contacts) { contact in
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(contact.name)
+                                .font(.headline)
                             Text("contacts.everyXDays \(contact.daysBetweenNotifications)")
                                 .font(.caption)
-                                .foregroundStyle(.secondary)
+                            if contact.nextNotification != nil {
+                                Text("contacts.nextNotificationScheduledOn \(contact.nextNotificationFormatted)")
+                                    .font(.caption2)
+                            }
                         }
-                    }
-                    .swipeActions {
-                        Button(role: .destructive) {
-                            modelContext.delete(contact)
-                        } label: {
-                            Label("button.delete", systemImage: "trash")
+                        .swipeActions {
+                            Button(role: .destructive) {
+                                modelContext.delete(contact)
+                            } label: {
+                                Label("button.delete", systemImage: "trash")
+                            }
                         }
                     }
                 }
                 if permissionGranted == false {
                     Section {
-                        HStack {
+                        HStack(alignment: .top) {
                             Image(systemName: "exclamationmark.circle")
                                 .font(.title)
-                            Text("contacts.authorizationWarning.content")
+                            VStack(alignment: .leading) {
+                                Text("contacts.authorizationWarning.content")
+                                    .font(.subheadline)
+                                Button("contacts.authorizationWarning.openSettings") {
+                                    NotificationManager.shared.openSettings()
+                                }
+                                .buttonStyle(.borderedProminent)
+                            }
                         }
                     } header: {
                         Text("contacts.authorizationWarning.title")

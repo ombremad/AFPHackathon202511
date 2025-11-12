@@ -14,6 +14,9 @@ class Contact {
     var name: String
     var daysBetweenNotifications: Int
     var nextNotification: Date?
+    var nextNotificationFormatted: String {
+        nextNotification?.formatted(date: .abbreviated, time: .omitted) ?? "never"
+    }
     
     init(name: String, daysBetweenNotifications: Int, nextNotification: Date?) {
         self.name = name

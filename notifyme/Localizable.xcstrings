@@ -11,16 +11,6 @@
         }
       }
     },
-    "button.cancel" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cancel"
-          }
-        }
-      }
-    },
     "button.delete" : {
       "localizations" : {
         "en" : {
@@ -51,6 +41,16 @@
         }
       }
     },
+    "contacts.authorizationWarning.openSettings" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open iOS settings"
+          }
+        }
+      }
+    },
     "contacts.authorizationWarning.title" : {
       "localizations" : {
         "en" : {
@@ -61,12 +61,32 @@
         }
       }
     },
+    "contacts.contactListIsEmpty" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The contact list is empty for now. Do you want to add a first contact?"
+          }
+        }
+      }
+    },
     "contacts.everyXDays %lld" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Every %lld days"
+          }
+        }
+      }
+    },
+    "contacts.nextNotificationScheduledOn %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next notification scheduled on %@"
           }
         }
       }
@@ -127,57 +147,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "New contact"
-          }
-        }
-      }
-    },
-    "onboarding.button.requestNotificationsAccess" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Allow notifications"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Autoriser les notifications"
-          }
-        }
-      }
-    },
-    "onboarding.notificationExplanation" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "You need to allow access to notifications for this app to work."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tu dois autoriser l’accès aux notifications pour que cette app fonctionne."
-          }
-        }
-      }
-    },
-    "onboarding.notificationTitle" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Notifications"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Notifications"
           }
         }
       }
