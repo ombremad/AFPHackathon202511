@@ -2,7 +2,14 @@
   "sourceLanguage" : "en",
   "strings" : {
     "• Next: %@" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ". Suivant: %@"
+          }
+        }
+      }
     },
     "button.addContact" : {
       "localizations" : {
@@ -10,6 +17,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Add a contact"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajout de contact"
           }
         }
       }
@@ -21,6 +34,12 @@
             "state" : "translated",
             "value" : "Cancel"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "annuler"
+          }
         }
       }
     },
@@ -30,6 +49,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Delete"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer"
           }
         }
       }
@@ -41,6 +66,12 @@
             "state" : "translated",
             "value" : "Save"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrer"
+          }
         }
       }
     },
@@ -51,11 +82,24 @@
             "state" : "translated",
             "value" : "Contacts"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contacts"
+          }
         }
       }
     },
     "Every %lld days" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tout les %lld jours"
+          }
+        }
+      }
     },
     "newContact.header.contactInformation" : {
       "localizations" : {
@@ -63,6 +107,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Contact information"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informations du contact"
           }
         }
       }
@@ -74,6 +124,12 @@
             "state" : "translated",
             "value" : "Notification setting"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notification de réglage"
+          }
         }
       }
     },
@@ -83,6 +139,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Name"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nom"
           }
         }
       }
@@ -94,6 +156,12 @@
             "state" : "translated",
             "value" : "Every %lld days"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tout les %lld jours"
+          }
         }
       }
     },
@@ -103,6 +171,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "New contact"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouveau contact "
           }
         }
       }
