@@ -20,7 +20,7 @@ class Notification {
     var dateFormatted: String {
         date.formatted(date: .abbreviated, time: .omitted)
     }
-    
+        
     init(date: Date, contact: Contact) {
         self.date = date
         self.contact = contact

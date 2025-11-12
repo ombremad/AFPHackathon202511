@@ -67,7 +67,7 @@ struct ContactsView: View {
                         }
                         .swipeActions {
                             Button(role: .destructive) {
-                                modelContext.delete(contact)
+                                deleteContact(contact)
                             } label: {
                                 Label("button.delete", systemImage: "trash")
                             }
@@ -120,6 +120,17 @@ struct ContactsView: View {
                 }
             }
         }
+    }
+    
+    func deleteContact(_ contact: Contact) {
+        for notification in contact.notifications {
+            if let notificationID = notification.notificationID {
+                print("Deleting notification with ID: \(notificationID)")
+                NotificationManager.shared.deleteNotification(identifier: notificationID)
+            }
+            modelContext.delete(notification)
+        }
+        modelContext.delete(contact)
     }
 }
 
