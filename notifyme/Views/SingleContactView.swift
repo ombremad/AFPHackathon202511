@@ -61,15 +61,29 @@ struct SingleContactView: View {
                 Section {
                     VStack(alignment: .leading) {
                         if let nextNotification = contact.nextUpcomingNotification {
-                            Text("singleContact.nextCheckInIsDueBy")
-                                .font(.footnote)
                             Text(nextNotification.dateFormatted)
                                 .font(.subheadline)
                         } else {
-                            Text("singleContact.checkInOverdue")
-                                .font(.footnote)
+                            Text("singleContact.overdue")
+                                .font(.subheadline)
+                                .foregroundStyle(.white)
+                                .listRowBackground(LinearGradient.destructive)
                         }
                     }
+                } header: {
+                    Label("singleContact.nextCheckIn", systemImage: "calendar")
+                }
+                Section {
+                    if contact.checkIns.isEmpty {
+                        Text("singleContact.noCheckInsYet \(contact.name)")
+                    } else {
+                        ForEach(contact.checkIns.reversed()) { checkIn in
+                            Text(checkIn.dateFormatted)
+                                .font(.subheadline)
+                        }
+                    }
+                } header: {
+                    Label("singleContact.header.lastCheckIns", systemImage: "ellipsis.message")
                 }
             }
             .navigationTitle($contact.name)
@@ -77,16 +91,19 @@ struct SingleContactView: View {
     }
     
     private func checkIn() {
+        // Delete iOS scheduled notification
         if let nextNotification = contact.nextUpcomingNotification {
             NotificationManager.shared.deleteNotification(identifier: nextNotification.notificationID!)
             modelContext.delete(nextNotification)
         }
+        // Create new iOS schedule notification
         guard let nextDate = Calendar.current.date(
             byAdding: DateComponents(day: contact.daysBetweenNotifications),
             to: .now
         ) else {
             return
         }
+        // Create new model notification
         let notification = Notification(date: nextDate, contact: contact)
         notification.notificationID = NotificationManager.shared.scheduleNotification(
             title: String(localized: "notification.reminder.title \(contact.name)"),
@@ -94,6 +111,10 @@ struct SingleContactView: View {
             timeInterval: nextDate.timeIntervalSinceNow
         )
         modelContext.insert(notification)
+        // Create new model check-in
+        let checkIn = CheckIn(date: .now, contact: contact)
+        modelContext.insert(checkIn)
+        // Change state in view
         hasCheckedIn = true
     }
 }

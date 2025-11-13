@@ -490,22 +490,6 @@
         }
       }
     },
-    "singleContact.checkInOverdue" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Check-in is overdue. Get back in touch as soon as possible!"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Prise de contact en retard. Reprend contact aussi vite que possible !"
-          }
-        }
-      }
-    },
     "singleContact.didYouJustCheckInWith %@" : {
       "localizations" : {
         "en" : {
@@ -522,18 +506,42 @@
         }
       }
     },
-    "singleContact.nextCheckInIsDueBy" : {
+    "singleContact.header.lastCheckIns" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Next check-in is due by"
+            "value" : "Last check-ins"
           }
-        },
-        "fr" : {
+        }
+      }
+    },
+    "singleContact.nextCheckIn" : {
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Prochaine prise de contact d’ici le"
+            "value" : "Next planned check-in"
+          }
+        }
+      }
+    },
+    "singleContact.noCheckInsYet %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You haven’t checked in with %@ yet."
+          }
+        }
+      }
+    },
+    "singleContact.overdue" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Overdue"
           }
         }
       }

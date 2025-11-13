@@ -16,6 +16,9 @@ class Contact {
     
     @Relationship(deleteRule: .cascade, inverse: \Notification.contact)
     var notifications: [Notification] = []
+    
+    @Relationship(deleteRule: .cascade, inverse: \CheckIn.contact)
+    var checkIns: [CheckIn] = []
 
     var nextUpcomingNotification: Notification? {
         notifications

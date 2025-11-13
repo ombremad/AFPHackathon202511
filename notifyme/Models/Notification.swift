@@ -15,7 +15,7 @@ class Notification {
     var notificationID: String?
     var isCompleted: Bool = false
     
-    var contact: Contact?
+    var contact: Contact
     
     var dateFormatted: String {
         date.formatted(date: .complete, time: .omitted)
