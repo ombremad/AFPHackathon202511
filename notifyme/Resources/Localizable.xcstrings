@@ -370,7 +370,20 @@
       }
     },
     "newContact.header.contactIcon" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contact icon"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Icône du contact"
+          }
+        }
+      }
     },
     "newContact.header.contactInformation" : {
       "localizations" : {
@@ -529,7 +542,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Prêt à nourrir tes liens ?"
+            "value" : "Ready to revive your social bonds?"
           }
         },
         "fr" : {
@@ -664,6 +677,46 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tu viens de prendre contact avec %@ ?"
+          }
+        }
+      }
+    },
+    "singleContact.everyXDays %@ %lld" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "You will check with %1$@ every day."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "You will check with %1$@ every %2$lld days."
+                }
+              }
+            }
+          }
+        },
+        "fr" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Tu contacteras %1$@ tous les jours."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Tu contacteras %1$@ tous les %2$lld jours."
+                }
+              }
+            }
           }
         }
       }
