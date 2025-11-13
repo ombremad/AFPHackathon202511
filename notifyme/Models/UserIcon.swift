@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-enum CategoryIcon: String, CaseIterable, Identifiable {
+enum UserIcon: String, CaseIterable, Identifiable {
     
     case figure2andchildholdinghands
     case figureaustralianfootball
@@ -55,15 +55,15 @@ enum CategoryIcon: String, CaseIterable, Identifiable {
     }
     
     var image: Image { Image(resource) }
-    func getIconWith(_ string: String) -> CategoryIcon {
-        CategoryIcon(rawValue: string) ?? .figure2andchildholdinghands
+    func getIconWith(_ string: String) -> UserIcon {
+        UserIcon(rawValue: string) ?? .figure2andchildholdinghands
     }
     
 }
 
 #Preview{
     ScrollView {
-        ForEach(CategoryIcon.allCases, id: \.self) { icon in
+        ForEach(UserIcon.allCases, id: \.self) { icon in
             icon.image
         }
         .padding()
