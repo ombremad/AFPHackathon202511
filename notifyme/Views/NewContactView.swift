@@ -66,3 +66,7 @@ struct NewContactView: View {
         modelContext.insert(notification)
     }
 }
+
+#Preview {
+    NewContactView()
+}
