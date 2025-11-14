@@ -417,18 +417,18 @@
         }
       }
     },
-    "debug.deleteAllData" : {
+    "debug.deleteAllUserData" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Delete all data"
+            "value" : "Delete all user data"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Supprimer toutes les données"
+            "value" : "Supprimer toutes les données utilisateur"
           }
         }
       }
@@ -486,13 +486,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Make demo notification"
+            "value" : "Make demo notification (15 sec.)"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Créer une notification de démo"
+            "value" : "Créer une notification de démo (15 sec.)"
           }
         }
       }
@@ -509,6 +509,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pas de notification planifiée"
+          }
+        }
+      }
+    },
+    "debug.seeOnboardingAgain" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See onboarding again"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revoir l’introduction"
           }
         }
       }
