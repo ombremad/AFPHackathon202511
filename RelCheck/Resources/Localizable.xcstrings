@@ -1,6 +1,166 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "about.author.header" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anne Ferret"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anne Ferret"
+          }
+        }
+      }
+    },
+    "about.author.message" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anne Ferret (aka @ombremad) is a iOS developer, born in France, living between her birthplace and the Netherlands.\\nA former tech journalist, she started a career change in 2025: she attended Apple Foundation Program Advanced and learned to code! RelCheck is one of her first apps."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anne Ferret (aka @ombremad) est une développeuse iOS, née en France, vivant entre son pays de naissance et les Pays-Bas.\\nAncienne journaliste tech, elle a initié un changement de carrière en 2025 : elle a fait l’Apple Foundation Program Advanced et appris à coder ! RelCheck est une de ses premières apps."
+          }
+        }
+      }
+    },
+    "about.debugMenu" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debug menu"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menu de debug"
+          }
+        }
+      }
+    },
+    "about.links.anneFerretWebsite" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anne Ferret website"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Site web d’Anne Ferret"
+          }
+        }
+      }
+    },
+    "about.links.header" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Links"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liens"
+          }
+        }
+      }
+    },
+    "about.links.relCheckOnGitHub" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RelCheck on GitHub"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RelCheck sur GitHub"
+          }
+        }
+      }
+    },
+    "about.thisApp.header" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RelCheck"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RelCheck"
+          }
+        }
+      }
+    },
+    "about.thisApp.message" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RelCheck (codename: notifyme) came up as a small hackathon project during Apple Foundation Program Advanced. A version 0.1 was completed in about 36 hours thanks to the effort of two people: Dembo and Anne. The latter decided to continue working on the project to improve what could be.\\nThis app is made for, and dedicated to, all my ADHD and neuro-spicy people. With much love!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RelCheck (nom de code : notifyme) est né en tant que petit projet de hackathon durant l’Apple Foundation Program Advanced. Une version 0.1 a été terminée en environ 36 heures, grâce aux efforts de deux personnes : Dembo et Anne. La dernière a décidé de continue à travailler sur le projet pour l’améliorer autant que possible.\\nCette app est faite pour, et dédiée à, toustes mes adelphes de TDAH et neuro-atypiques. Avec amour !"
+          }
+        }
+      }
+    },
+    "about.title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À propos"
+          }
+        }
+      }
+    },
+    "button.about" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À propos"
+          }
+        }
+      }
+    },
     "button.addContact" : {
       "localizations" : {
         "en" : {
@@ -28,23 +188,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pris contact"
-          }
-        }
-      }
-    },
-    "button.debug" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Debug"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Debug"
+            "value" : "Contact pris"
           }
         }
       }
@@ -66,7 +210,20 @@
       }
     },
     "button.edit" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Éditer"
+          }
+        }
+      }
     },
     "button.save" : {
       "localizations" : {
@@ -174,7 +331,7 @@
               "one" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Chaque jour"
+                  "value" : "Tous les jours"
                 }
               },
               "other" : {
@@ -196,7 +353,7 @@
               "one" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Next check in %lld day"
+                  "value" : "Next check tomorrow"
                 }
               },
               "other" : {
@@ -214,7 +371,7 @@
               "one" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Prochain contact dans %lld jour"
+                  "value" : "Prochain contact demain"
                 }
               },
               "other" : {
@@ -255,23 +412,23 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Contact"
+            "value" : "Contacts"
           }
         }
       }
     },
-    "debug.deleteAllData" : {
+    "debug.deleteAllUserData" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Delete all data"
+            "value" : "Delete all user data"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Supprimer toutes les données"
+            "value" : "Supprimer toutes les données utilisateur"
           }
         }
       }
@@ -329,13 +486,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Make demo notification"
+            "value" : "Make demo notification (15 sec.)"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Créer une notification de démo"
+            "value" : "Créer une notification de démo (15 sec.)"
           }
         }
       }
@@ -356,6 +513,22 @@
         }
       }
     },
+    "debug.seeOnboardingAgain" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See onboarding again"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revoir l’introduction"
+          }
+        }
+      }
+    },
     "debug.title" : {
       "localizations" : {
         "en" : {
@@ -368,6 +541,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Menu de debug"
+          }
+        }
+      }
+    },
+    "editContact.title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit contact"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Édition du contact"
           }
         }
       }
@@ -462,7 +651,7 @@
               "one" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Chaque jour"
+                  "value" : "Tous les jours"
                 }
               },
               "other" : {
@@ -668,6 +857,70 @@
         }
       }
     },
+    "singleContact.deleteAlert.destructiveButton" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer"
+          }
+        }
+      }
+    },
+    "singleContact.deleteAlert.dismissButton" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuler"
+          }
+        }
+      }
+    },
+    "singleContact.deleteAlert.message" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do you really want to delete the contact? You cannot undo this action!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veux-tu vraiment supprimer ce contact ? Cette action est irréversible !"
+          }
+        }
+      }
+    },
+    "singleContact.deleteAlert.title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete contact"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer le contact"
+          }
+        }
+      }
+    },
     "singleContact.didYouJustCheckInWith %@" : {
       "localizations" : {
         "en" : {
@@ -751,7 +1004,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Prochain contact planifié"
+            "value" : "Prochain contact prévu"
           }
         }
       }

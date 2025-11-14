@@ -12,6 +12,7 @@ import SwiftData
 struct ContactsView: View {
     @AppStorage("hasSeenOnboarding") var hasSeenOnboarding: Bool = false
     @Environment(\.modelContext) private var modelContext
+    
     @Query(sort: \Contact.name) private var contacts: [Contact]
     
     var sortedContacts: [Contact] {
@@ -115,7 +116,7 @@ struct ContactsView: View {
                                     Button("contacts.authorizationWarning.openSettings") {
                                         NotificationManager.shared.openSettings()
                                     }
-                                    .buttonStyle(.glassProminent)
+                                    .buttonStyle(AppButton())
                                 }
                             }
                         }
@@ -126,14 +127,14 @@ struct ContactsView: View {
                 .toolbar {
                     ToolbarItem(placement: .secondaryAction) {
                         NavigationLink {
-                            DebugView()
+                            AboutView()
                         } label: {
-                            Label("button.debug", systemImage: "ant")
+                            Label("button.about", systemImage: "person.fill.questionmark")
                         }
                     }
                     ToolbarItem(placement: .primaryAction) {
                         NavigationLink {
-                            NewContactView()
+                            ContactFormView()
                         } label: {
                             Label("button.addContact", systemImage: "person.crop.circle.fill.badge.plus")
                         }

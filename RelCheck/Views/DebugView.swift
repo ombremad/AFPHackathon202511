@@ -11,8 +11,12 @@ import SwiftData
 
 struct DebugView: View {
     @Environment(\.modelContext) private var modelContext
+    @AppStorage("hasSeenOnboarding") var hasSeenOnboarding: Bool = false
     
-    @State private var pendingNotifications: [UNNotificationRequest] = [] 
+    @State private var pendingNotifications: [UNNotificationRequest] = []
+    
+    @State private var hasMadeDemoNotification = false
+    @State private var hasDeletedAllUserData = false
 
     var body: some View {
         List {
@@ -50,13 +54,22 @@ struct DebugView: View {
                         body: String(localized: "notification.reminder.body"),
                         timeInterval: 10
                     )
+                    hasMadeDemoNotification = true
                 }
-                Button("debug.deleteAllData", systemImage: "trash") {
+                .opacity(hasMadeDemoNotification ? 0.3 : 1)
+                .disabled(hasMadeDemoNotification)
+                Button("debug.seeOnboardingAgain", systemImage: "rectangle.stack") {
+                    hasSeenOnboarding = false
+                }
+                Button("debug.deleteAllUserData", systemImage: "trash") {
                     try? modelContext.delete(model: Contact.self)
                     try? modelContext.delete(model: Notification.self)
                     NotificationManager.shared.deleteAllNotifications()
                     loadNotifications()
+                    hasDeletedAllUserData = true
                 }
+                .opacity(hasDeletedAllUserData ? 0.3 : 1)
+                .disabled(hasDeletedAllUserData)
             } header: {
                 Text("debug.header.actions")
             }
@@ -78,4 +91,8 @@ struct DebugView: View {
             }
         }
     }
+}
+
+#Preview {
+    DebugView()
 }
